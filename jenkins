@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-username/your-repo.git'
+                git 'https://github.com/bhatiboiii/myapp.git'
             }
         }
 
@@ -32,7 +32,7 @@ pipeline {
 
         stage('Health Check on Green') {
             steps {
-                sh 'curl -f http://localhost:8081 || exit 1'
+                sh 'curl -f http:13.203.101.113:8081 || exit 1'
             }
         }
 
